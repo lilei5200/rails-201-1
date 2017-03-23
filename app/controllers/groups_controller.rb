@@ -16,6 +16,7 @@ class GroupsController < ApplicationController
      @group = Group.find(params[:id])
    end
 
+
    def update
      @group = Group.find(params[:id])
      if @group.update(group_params)
@@ -24,7 +25,7 @@ class GroupsController < ApplicationController
       render :edit
    end
  end
- 
+
     def destroy
       @group = Group.find(params[:id])
       @group.destroy
