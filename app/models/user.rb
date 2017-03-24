@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
 
    has_many :groups
-end
+   has_many :posts
+  end
